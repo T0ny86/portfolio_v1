@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TA Dev.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>TA WEB Dev.</title>
     <link rel="stylesheet" href="./styles/shared.css">
-    <link rel="stylesheet" href="./styles/intro.css">
+    <!-- <link rel="stylesheet" href="./styles/intro.css"> -->
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+<!-- 
     <div id="preload-intro" class="">
         <div class="intro-logo">
             <svg width="200" height="150">
-                <!-- Created with width="200" height="150"-->
                  <polygon id="svg_polygon" stroke-width="5" fill="none"  orient="x" shape="regularPoly" sides="6" stroke-linecap="round" stroke-linejoin="round" 
                  cx="204.91477" cy="122.82386" edge="111.82526" 
                  points="169.83932495117188,74.78392028808594 135.034912109375,132.48667907714844 65.42601013183594,132.48667907714844 30.62156105041504,74.78392028808594 65.42601013183594,17.081113815307617 135.034912109375,17.081113815307617 169.83932495117188,74.78392028808594 "
@@ -22,19 +25,48 @@
                </svg>
         </div>
     </div>
+-->
+    <!-- site start-->
     <div id="main-wrapper">
         <header>
-            <div id="logo"></div>
-            <div id="nav"></div>
+            <div id="logo">
+                <img src="./imgs/logo.svg" alt="Tanous Atallah Webdeveloper">            
+            </div>
+            <div id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#toolbox">Toolbox</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <span><a href="#" title=".pdf file">Resume</a></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- content started -->
         <div id="container">
-            <div class="hero-wrapper">
+            <section id="hero-wrapper">
                 <div class="hero-title"></div>
                 <div class="hero-name"></div>
                 <div class="hero-msg"></div>
                 <div class="hero-text"></div>
-            </div>
+            </section>
+
+            <!-- ABOUT Section -->
+            <section id="about"></section>
+
+            <!-- Toolbox Section -->
+            <section id="toolbox"></section>
+
+            <!-- Work Section -->
+            <section id="work"></section>
+
+            <!-- Contact Section -->
+            <section id="contact"></section>
+
         </div>
         <!-- content ended -->
         <footer></footer>

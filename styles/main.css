@@ -1,4 +1,103 @@
-#main-wrapper{
-    position: relative;
-    z-index: 99;
+/*===== CSS file table ====== 
+    1) Header
+    2) Hero Section
+    3) Toolbox Section
+    4) About Section
+    5) Work Section
+    6) Contact Section
+    7) Footer
+ =======================*/
+
+
+/* =========================
+    1)  Header
+=============================*/
+header {
+  /* outline: 1px red dotted; */
+  padding: 5px 15px 5px 10px;
+  display: flex;
+  justify-content: space-between;
 }
+
+header #logo {
+  width: 100px;
+}
+
+header #logo img {
+  width: 100%;
+  padding: 3px;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li a {
+  margin: 3px 10px;
+  padding: 3px 5px;
+  transition: color .25s;
+  position: relative;
+}
+
+header nav ul li a:hover {
+    color: var(--clr-font-shiny);
+}
+
+header nav ul li > a::before {
+    content: '';
+    background-image: url("../imgs/icon_polygon.svg");
+    background-size: cover;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -12px;
+    top: 9px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+header nav ul li > a:hover::before {
+  opacity: 0.9;
+}
+
+header nav ul li:last-child a:hover {
+    outline: 1px solid var(--clr-font-shiny);
+    border-radius: 5px;
+}
+
+/* =========================
+    2)  Hero Section
+=============================*/
+
+
+/* =========================
+    3)  Toolbox Section
+=============================*/
+
+
+/* =========================
+    4)  About Section
+=============================*/
+
+
+/* =========================
+    5)  Work Section
+=============================*/
+
+
+/* =========================
+    6)  Contact Section
+=============================*/
+
+
+/* =========================
+    7)  Footer
+=============================*/
