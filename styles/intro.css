@@ -1,0 +1,109 @@
+:root{
+    --clr-logo-border1: #58e1c3;
+    --clr-logo-border2: #00bf5f;
+}
+
+#preload-intro{
+    outline: 1px yellow dotted;
+    z-index: 100;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+
+.intro-logo{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50% , -50%);
+}
+/* .intro-logo , complete Animation code is below , jumb to footer this file */
+#svg_polygon{
+    stroke: var(--clr-logo-border2);
+    /* stroke-linejoin:miter ; */
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300 ;
+    animation: logo-outer 3s ease-in forwards;
+}
+@keyframes logo-outer {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+#svg_txt{
+    visibility: hidden;
+    /* transition-delay: 2s; */
+    /* animation-delay: .2; */
+    animation-name: logo-txt1;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes logo-txt1 {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    20%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*  */
+.intro-logo{
+    /* outline: 1px yellow dotted; */
+    /* z-index: 99; */
+    animation-name: logo-movment;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-movment {
+
+    to{
+        top: 30px;
+        left: 30px;
+        transform: scale(-30%);
+        opacity: 0.2;
+    }
+}
+
+/* add finishing the intro and show the website */
+#preload-intro{
+    animation-name: intro-finishing;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-finishing {
+    0%{
+        opacity: 1;
+        height: 100vh;
+    }
+    10%{
+        opacity: 0.9;
+        height: 100vh;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    100%{
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        height: 0;
+    }
+}
