@@ -79,7 +79,7 @@ header nav ul li:last-child a:hover {
     2)  Hero Section
 =============================*/
 #hero-wrapper {
-    outline: 1px dotted blueviolet;
+    /* outline: 1px dotted blueviolet; */
     /* margin: 10px auto 10px 100px; */
     padding-left: calc(15% );
     text-align: left;
@@ -158,10 +158,10 @@ header nav ul li:last-child a:hover {
 =============================*/
 footer{
     width: 100%;
-    outline: 1px dotted wheat;
+    /* outline: 1px dotted wheat; */
 }
 footer > div{
-    outline: 1px dotted salmon;
+    /* outline: 1px dotted salmon; */
     width: fit-content;
     margin: 10px auto;
     padding: 10px;

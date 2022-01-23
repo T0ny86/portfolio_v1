@@ -29,13 +29,13 @@ body {
 }
 
 #main-wrapper {
-  outline: 1px yellowgreen dashed;
+  /* outline: 1px yellowgreen dashed; */
   margin: 30px 60px;
   min-height: 100vh;
 }
 
 #container{
-    outline: 1px gold dashed;
+    /* outline: 1px gold dashed; */
     width: calc(100% - 100px);
     min-height: inherit; 
     margin: 70px auto 5px;
