@@ -5,7 +5,7 @@
   --font-mono: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
  
   --clr-bg-body: #0a192f;
-
+  --clr-bg-btn: #014049;
   --clr-font-shiny: #58e1c3;
   --clr-font-light: #ccd6f6;
   --clr-font-dark: #8892b0;
@@ -25,12 +25,20 @@ body {
   background-color: var(--clr-bg-body);
   /* position: relative; */
   font-family: var(--font-sans);
+  color:var(--clr-font-dark) ;
 }
 
 #main-wrapper {
   outline: 1px yellowgreen dashed;
   margin: 30px 60px;
   min-height: 100vh;
+}
+
+#container{
+    outline: 1px gold dashed;
+    width: calc(100% - 100px);
+    min-height: inherit; 
+    margin: 70px auto 5px;
 }
 
 ul,
