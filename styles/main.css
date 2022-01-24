@@ -153,6 +153,7 @@ header nav ul li:last-child a:hover {
     border-radius: 20px;
     overflow: hidden;
     transition: scale .3s, outline .3s;
+    position: relative;
 }
 #toolbox div.icon:hover{
     outline: 2px solid var(--clr-font-shiny);
@@ -160,8 +161,21 @@ header nav ul li:last-child a:hover {
     
 }
 #toolbox div.icon img{
-    padding: 15px;
-    width: 100%;
+padding: 15px;
+width: 100%;
+}
+#toolbox div.icon::after {
+    content: attr(data-skill);
+    position: absolute;
+    color: yellow;
+    bottom: 3px;
+    left: 7px;
+    font-size: 1.5rem;
+    opacity: 0.1;
+    transition: opacity .15s;
+}
+#toolbox div.icon:hover::after {
+    opacity: 1;
 }
 
 /* =========================
