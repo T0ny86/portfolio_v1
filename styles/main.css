@@ -108,30 +108,41 @@ header nav ul li:last-child a:hover {
     letter-spacing: .2rem;
     color: var(--clr-font-dark);
 }
-#hero-wrapper .hero-contact ,
-#hero-wrapper .hero-contact a{
-    padding: 0px 30px 15px;
-    width: fit-content;
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-family: var(--font-mono);
-    color: var(--clr-font-shiny);
-}
-#hero-wrapper .hero-contact img{
-    padding-top: 10px;
-    width: 30px;
-}
+/* --- call to action btn ---*/
 #hero-wrapper .hero-contact{
     margin: 5px auto;
+    padding: 0;
+    width: fit-content;
     border: 1px solid var(--clr-font-shiny);
-    border-radius: 5px;
+    border-radius: 7px;
     transition: background .2s;
 }
 #hero-wrapper .hero-contact:hover{
     cursor: pointer;
     background: var(--clr-bg-btn)
-
 }
+#hero-wrapper .hero-contact a{
+    /* outline: 1px dotted yellow; */
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: var(--font-mono);
+    color: var(--clr-font-shiny);
+}
+#hero-wrapper .hero-contact a span{
+    /* outline: 1px dotted red; */
+    display: inline-block;
+    background-image: url("../imgs/smile.svg");
+    width: 30px;
+    height: 30px;
+    transition: background .15s;
+}
+#hero-wrapper .hero-contact:hover a span{
+    background-image: url("../imgs/smile-laugh.svg");
+}
+
+
 
 /* =========================
     3)  Toolbox Section
