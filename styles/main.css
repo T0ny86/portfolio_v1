@@ -136,7 +136,33 @@ header nav ul li:last-child a:hover {
 /* =========================
     3)  Toolbox Section
 =============================*/
-
+#toolbox{
+    /* outline: 1px dashed fuchsia; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+#toolbox div.icon{
+    outline: 1px das hotpink;
+    min-width: 60px;
+    min-height:60px;
+    background-color: var(--clr-bg-btn);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: scale .3s, outline .3s;
+}
+#toolbox div.icon:hover{
+    outline: 2px solid var(--clr-font-shiny);
+    transform: scale(105%);
+    
+}
+#toolbox div.icon img{
+    padding: 15px;
+    width: 100%;
+}
 
 /* =========================
     4)  About Section
